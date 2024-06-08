@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e4faabd4-9b5f-44a1-9fca-8db841bbc782" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/c6/6a3bbbca/RankScoreData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd3cadd861a449f5bc911f793234e7e737600/ce/a405959f/LayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/4b/02b357b3/RankData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/82/ffea433f/StatsManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/fb/78e0d284/EndlessEnemy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/f4/ddc70b02/EndlessGrid.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/4f/70a0e074/GunControl.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/ab/c77c6279/Delegate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/92/48be135a/ActivateNextWave.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/1c/b59ed63d/MenuEsc.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/68/2ad75ffd/StyleCalculator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/20/c16fceb3/GameState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/e2/40ce2729/EnemyShotgun.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/83/921dded1/CyberGrindNavHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/67/60c088ad/Ferryman.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/4a/6f4de5f1/WeaponCharges.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/65/cb439473/EndlessCube.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/55/8347cd61/Shockwave.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/82/89f49db5/PhysicalShockwave.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/7f/88fd0120/OptionsManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/e6df654645b1486c8224892f02ea84e51eb000/04/b4c9853d/02000119.il" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/85/31a6faa7/ProxySearchMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/75/28346eec/Movement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/ab/7100a0e1/MoveTowards.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/e6df654645b1486c8224892f02ea84e51eb000/48/d23784fd/Assembly-CSharp.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/fd/1d9ea971/DestroyMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/43/01767ebd/ShotgunHammer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/57/ba19063d/BackSelectOverride.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/a4/0d77e7d7/StainVoxel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/1c/89dc5e77/FireZone.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/03/367c29b6/GasolineStain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/17/7026bbdf/NailgunAnimationReceiver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/1a/f29bb37b/EnemyIdentifier.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/41/3eb7a465/Revolver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/f1/135e435e/Activator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/61/614baad5/EnemyNailgun.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/4d/35b77987/RocketLauncher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/1f/7e2c9312/PlaceholderPrefabDatabase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/b3/cdad78b3/Soap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/d4/16b6b785/WeaponPos.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/a3/0cbd2b53/AlterMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/2a/bd4f030f/Nailgun.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/aa/209c60db/BuildMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/ab/48d5abe3/HudOpenEffect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/be/170e3904/MonoSingleton`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/11/39fd5cf4/CrowdReactions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/7d/a27465a8/WeaponIcon.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/be/7adbdf0d/OptionsMenuToManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/50/f669d801/CheckPoint.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/a1/b3540244/WorldOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/87/ff7c3cee/FishLeaderboard.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/dd/747aa13b/SpawnableObjectsDatabase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/4c/20c7811d/SpawnMenu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/3a/65debe5f/VoxelProxy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/59/26e0b370/Magnet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/1d/08a2e130/SandboxSaver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/f4/4e06cf25/HealthBar.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/96/91af18ab/GameStateManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/e8/69c21490/FinalCyberRank.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/f1/6c047ad5/AlterMenuElements.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/3a/3f0de37c/EnemyRadianceConfig.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/7a/b78969af/LeaderboardController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/d7/5c490673/SandboxAlterMenu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/8f/596daab2/LevelEndLeaderboard.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/44/7c7dbe23/SandboxEnemy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/6e/e7bff58f/StaminaMeter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/15/991feb92/SceneHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/42/a4df72d3/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/c6/f199c043/TimeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/f4/deaf3d1d/WeaponOrderController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/39/011cf330/BeamType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/04/d099e6f8/SandboxSpawnableInstance.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/ce/426c247c/GameProgressSaver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/aa/b8caba83/DryZone.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/9f/e273b398/SandboxArm.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/19/c9f1b431/NewMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/51/c544ade7/LayerSelect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/06/8ed46184/SwordsMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/45/a52e3d9a/MoveMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/aa/0376ac4b/PlaceMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/f2/876c5214/Flammable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/3e/05116e45/LevelSelectAct.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/85/e4bd5e48/FinalRank.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/b1/7e9e9b50/FishingRodWeapon.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/a6/5ece13db/LevelSelectPanel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/01/140aa635/Grenade.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/13/599c87eb/V2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/23/9ef1b978/ExplosionChunk.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/f9/c8f9589f/CustomContentGui.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/db/6302ccf1/Shotgun.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/c3/280ddcd7/CustomMusicPlayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/5e/6e83f576/Coin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/f4/592bb00f/EndlessHighScore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/ac/a340e93b/Punch.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/4e/46e91a37/RevolverBeam.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/e1/17dd97e2/IEnemyRelationshipLogic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/8c/4c495fb2/Projectile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/6a/b330a38f/ShopButton.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/42/688ef94b/EnemyTarget.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/ad/67e016e4/BurningVoxel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/6a/b2a4896e/ZombieProjectiles.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/59/4521fc85/Zombie.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/74/d823e310/ShotgunShell.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/bc/46a1b3f0/Railcannon.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/04/a7ebe65d/IdolMauricer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/80/b7d93644/SpawnableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/90/1dda0d38/Stalker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/e1/c0e124eb/BeamgunBeam.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/29/b3d9789a/Idol.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/f4/cc429073/EnemyType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/bd/8fa42b45/WeaponIdentifier.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/5f/3e0a0e2f/Explosion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/df/23511c94/Drone.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/e5/4122daf2/StyleHUD.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/c8/8438a901/RevolverAnimationReceiver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/a6/5864365e/StyleRank.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/86/863ca148/RotateToFaceFrustumTarget.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/3b/c369b36f/ZombieMelee.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2gjPhArCQ93mFKF8fpd2mMHv6Va" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
+    <property name="settings.editor.selected.configurable" value="RiderCSharpFileTemplatesSettingsId" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/Upgrades/Weapons/Revolver/CoinFlashUpgrade.cs" />
+  </component>
+  <component name="RunManager" selected=".NET Executable.ULTRAKILL">
+    <configuration name="ULTRAKILL" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../SteamLibrary/steamapps/common/ULTRAKILL/ULTRAKILL.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../SteamLibrary/steamapps/common/ULTRAKILL" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../SteamLibrary/steamapps/common/ULTRAKILL/ULTRAKILL.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../SteamLibrary/steamapps/common/ULTRAKILL" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue=".NET Executable.ULTRAKILL" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
