@@ -50,6 +50,8 @@ public class XPMeter : MonoBehaviour
         rt.sizeDelta = Vector2.zero;
         rt.anchoredPosition = new Vector2(8f, 82f);
 
+        transform.position += Vector3.up * Options.config.XpBarOffset;
+
         slider.image.color = Color.cyan;
         slider.minValue = 0f;
         slider.maxValue = 1f;
@@ -75,6 +77,14 @@ public class XPMeter : MonoBehaviour
         bonusText.text = string.Empty;
     }
 
+    public void UpdateOffset(float delta)
+    {
+        var rt = transform as RectTransform;
+
+        rt.anchoredPosition += Vector2.up * delta * 1f;
+        
+    }
+
     private void Update()
     {
         
@@ -92,7 +102,7 @@ public class XPMeter : MonoBehaviour
         
         
         //text.text = $"Level {currLevel}   {slider.value:0.%}";
-        text.text = string.Format("Level {0}   <size=75%>{1, 6} / {2}</size>", currLevel, PlayerUpgradeStats.Instance.stylePoints - lastXP, currXP - lastXP);
+        text.text = string.Format("Level {0}   <size=75%>{1, 6} / {2}</size>", currLevel, (long)PlayerUpgradeStats.Instance.stylePoints - lastXP, currXP - lastXP);
         
         /*
         if (flash.color.a > 0.0f)

@@ -126,12 +126,14 @@ public class UpgradeCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         card.descriptionText.margin = new Vector4(8f, 8f, 8f, 8f);
 
         TMP_DefaultControls.Resources resources = new TMP_DefaultControls.Resources();
-        card.chooseButton = TMP_DefaultControls.CreateButton(resources).GetComponent<Button>();
-        card.chooseButton.transform.SetParent(card.content.transform);
+        //card.chooseButton = TMP_DefaultControls.CreateButton(resources).GetComponent<Button>();
+        card.chooseButton = Options.CreateButton(card.content.transform, "GIMME!");
+        card.chooseButton.transform.position += Vector3.up * 64f;
+        //card.chooseButton.transform.SetParent(card.content.transform);
         card.chooseButton.transform.SetAsLastSibling();
         
         card.chooseButton.onClick.AddListener(card.OnClick);
-        card.chooseButton.GetComponentInChildren <TMP_Text>().text = "GIMME!";
+        //card.chooseButton.GetComponentInChildren <TMP_Text>().text = "GIMME!";
         
         if (card.Choice.upgrade is LeveledUpgrade lvl0 && card.Choice.upgradeLevel)
             lvl0.level--;
@@ -160,6 +162,7 @@ public class UpgradeCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                     lvl.level++;
                 
                 existing.Apply();
+                PlayerUpgradeStats.Instance.upgradesAreApplied = true;
 
             }
             else if (!PlayerUpgradeStats.Instance.upgrades.ContainsKey(Choice.GetHashCode()))
@@ -170,6 +173,7 @@ public class UpgradeCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                 
                 PlayerUpgradeStats.Instance.upgrades.Add(Choice.GetHashCode(), Choice.upgrade);
                 Choice.upgrade.Apply();
+                PlayerUpgradeStats.Instance.upgradesAreApplied = true;
 
             } else
                 OK.Log($"Adding {Choice.upgrade.Name} upgrade failed! Already added and not leveled.", LogLevel.Error);

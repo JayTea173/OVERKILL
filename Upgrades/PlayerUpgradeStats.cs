@@ -9,9 +9,9 @@ using OVERKILL.HakitaPls;
 using OVERKILL.JSON;
 using OVERKILL.Patches;
 using OVERKILL.UI;
-using OVERKILL.UI.Options;
 using OVERKILL.UI.Upgrades;
 using OVERKILL.Upgrades.Cybergrind;
+using OVERKILL.Upgrades.RocketLauncher;
 using UnityEngine;
 
 namespace OVERKILL.Upgrades;
@@ -49,7 +49,7 @@ public class PlayerUpgradeStats
     [JsonProperty]
     private double stylePointsMultiplier = 1d;
 
-    private bool upgradesAreApplied = false;
+    public bool upgradesAreApplied = false;
 
     public double StylePointsMultiplier
     {
@@ -61,7 +61,7 @@ public class PlayerUpgradeStats
                 XPMeter.Instance.bonusText.text = $"+{stylePointsMultiplier - 1:0.%}";
         }
     }
-    public long stylePoints;
+    public double stylePoints;
     public int okLevel = 1;
 
     public Dictionary <int, IUpgrade> upgrades = new Dictionary <int, IUpgrade>();
@@ -69,7 +69,7 @@ public class PlayerUpgradeStats
     public static void Initialize()
     {
         Events.OnDealDamage.Pre += Instance.OnDeliverDamage;
-        Events.OnDeath.Post += Instance.OnEnemyDeath;
+        Events.OnEnemyDeath.Post += Instance.OnEnemyDeath;
 
         TryLoadFromFile(Path.Combine(Application.persistentDataPath, "OVERKILL-save.json"));
     }
@@ -113,8 +113,23 @@ public class PlayerUpgradeStats
         //UpgradeScreen.Instance.enabled = true;
     }
 
+    public void LevelUp(int toLevel)
+    {
+        int levelUps = toLevel - PlayerUpgradeStats.Instance.okLevel;
+
+        if (levelUps <= 0)
+            return;
+        
+        PlayerUpgradeStats.Instance.okLevel = toLevel;
+        OK.Log($"Levelups: {levelUps}");
+        UpgradeScreen.Instance.ShowTimes(levelUps);
+    }
+
     public void Reset()
     {
+        Events.OnPlayerRespawn.Pre?.Invoke();
+        Events.OnPlayerRespawn.LatePre?.Invoke();
+
         if (upgradesAreApplied)
         {
             foreach (var a in upgrades)
@@ -126,6 +141,8 @@ public class PlayerUpgradeStats
         if (!Options.config.KeepUpgrades)
         {
             upgrades.Clear();
+            PatchCybergrindEnemySpawning.customSpawns.customSpawns.Clear();
+            PatchCybergrindEnemySpawning.customSpawns.friendlySpawns.Clear();
 
             weaponDamageMultplier = new WeaponMultiplier();
             weaponHeadshotDamageMultiplier = new WeaponMultiplier();
@@ -148,10 +165,28 @@ public class PlayerUpgradeStats
 
             if (XPMeter.Instance != null)
                 XPMeter.Instance.bonusText.text = string.Empty;
+            
+            //PatchCybergrindEnemySpawning.AddCustomSpawn(SpawnBossUpgrade.CreateEndlessEnemy(EnemyType.V2), SpawnBossUpgrade.GetSpawnEntry(EnemyType.V2, 1));
+            //PatchCybergrindEnemySpawning.AddCustomSpawn(SpawnBossUpgrade.CreateEndlessEnemy(EnemyType.Gabriel), SpawnBossUpgrade.GetSpawnEntry(EnemyType.Gabriel, 1));
+            //PatchCybergrindEnemySpawning.AddCustomSpawn(SpawnBossUpgrade.CreateEndlessEnemy(EnemyType.GabrielSecond), SpawnBossUpgrade.GetSpawnEntry(EnemyType.GabrielSecond, 2));
+            //PatchCybergrindEnemySpawning.AddCustomSpawn(SpawnBossUpgrade.CreateEndlessEnemy(EnemyType.MinosPrime), SpawnBossUpgrade.GetSpawnEntry(EnemyType.MinosPrime, 1));
+            //PatchCybergrindEnemySpawning.AddCustomSpawn(SpawnBossUpgrade.CreateEndlessEnemy(EnemyType.SisyphusPrime), SpawnBossUpgrade.GetSpawnEntry(EnemyType.SisyphusPrime, 1));
 
+            /*
+            PatchCybergrindEnemySpawning.AddFriendlySpawn(SpawnBossUpgrade.CreateEndlessEnemy(EnemyType.V2), new CybergrindCustomSpawns.Entry()
+            {
+                numMin = 1,
+                numMax = 1,
+                radiantChance = 0f,
+                spawnsInRangedPosition = false,
+                waveIntervals = new[]{1},
+                waveStart = 0
+            });
+            */
         }
         else
         {
+            stylePoints = StyleLevelupThresholds.GetXPAtLevel(okLevel - 1);
             SaveToFile(Path.Combine(Application.persistentDataPath, "OVERKILL-save.json"));
             
             foreach (var a in upgrades)
@@ -161,7 +196,9 @@ public class PlayerUpgradeStats
 
         }
         
-        okLevel = StyleLevelupThresholds.GetLevelAtXP(stylePoints);
+        okLevel = StyleLevelupThresholds.GetLevelAtXP((long)stylePoints);
+        
+        Events.OnPlayerRespawn.Post?.Invoke();
 
     }
 

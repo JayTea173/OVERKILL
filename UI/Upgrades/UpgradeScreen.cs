@@ -12,6 +12,7 @@ namespace OVERKILL.UI.Upgrades;
 public class UpgradeScreen : MonoBehaviour
 {
     public DateTime timeShown;
+    private int timesToBeShown = 0;
 
     public Rarity minUpgradeRarity = Rarity.Common;
 
@@ -77,18 +78,21 @@ public class UpgradeScreen : MonoBehaviour
         var layout = rt.gameObject.AddComponent <HorizontalLayoutGroup>();
 
         var res = new TMP_DefaultControls.Resources();
-        GameObject skipButton = TMP_DefaultControls.CreateButton(res);
-        skipButton.transform.SetParent(transform);
-        var rtSkip = skipButton.transform as RectTransform;
+        
+        //GameObject skipButton = TMP_DefaultControls.CreateButton(res);
+        GameObject skipButtonGo = Options.CreateButton(transform, "SKIP").gameObject;
+        skipButtonGo.GetComponent <Button>().onClick.AddListener(OnSkip);
+        //skipButton.transform.SetParent(transform);
+        var rtSkip = skipButtonGo.transform as RectTransform;
 
         rtSkip.pivot = new Vector2(.5f, 1f);
         rtSkip.anchorMin = new Vector2(0.5f, 0f);
         rtSkip.anchorMax = new Vector2(0.5f, 0f);
         rtSkip.sizeDelta = new Vector2(200f, 40f);
         rtSkip.anchoredPosition = Vector2.down * 64f;
-        var textReroll = skipButton.GetComponentInChildren <TMP_Text>();
-        textReroll.text = "SKIP";
-        skipButton.GetComponent <Button>().onClick.AddListener(OnSkip);
+        //var textReroll = skipButton.GetComponentInChildren <TMP_Text>();
+        //textReroll.text = "SKIP";
+        //skipButton.GetComponent <Button>().onClick.AddListener(OnSkip);
     }
 
     #endregion
@@ -124,10 +128,24 @@ public class UpgradeScreen : MonoBehaviour
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
+
+        if (timesToBeShown <= 0)
+            return;
+        else
+            Show();
+    }
+
+    public void ShowTimes(int times)
+    {
+        timesToBeShown += times;
+
+        if (!gameObject.activeSelf)
+            Show();
     }
 
     public void Show()
     {
+        timesToBeShown--;
         gameObject.SetActive(true);
 
         RandomUpgrade.UpdateAvailable();

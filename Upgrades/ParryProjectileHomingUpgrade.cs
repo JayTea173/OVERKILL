@@ -12,7 +12,7 @@ public class ParryProjectileHomingUpgrade : LeveledUpgrade
 {
     public override int MaxLevel => 3;
 
-    public override double AppearChanceWeighting => RarityChances.Epic * 0.33f;
+    public override double AppearChanceWeighting => RarityChances.Epic * 0.33f * AppearChanceWeightingOptionMultiplier;
 
     public override string Name => "PARRY THIS CASUL";
 

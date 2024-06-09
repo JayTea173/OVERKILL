@@ -6,7 +6,7 @@ namespace OVERKILL.Upgrades;
 
 public class PunchCooldownUpgrade : LeveledUpgrade, IRandomizable
 {
-    public override double AppearChanceWeighting => RarityChances.Overkill;
+    public override double AppearChanceWeighting => RarityChances.Overkill * AppearChanceWeightingOptionMultiplier;
 
     public override int MaxLevel => 1;
 

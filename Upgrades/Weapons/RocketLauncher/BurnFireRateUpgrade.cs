@@ -11,13 +11,13 @@ namespace OVERKILL.Upgrades.RocketLauncher;
 
 public class BurnFireRateUpgrade : LeveledUpgrade, IRandomizable
 {
-    public override double AppearChanceWeighting => RarityChances.Rare * 1.2f;
+    public override double AppearChanceWeighting => RarityChances.Rare * 1.2f * AppearChanceWeightingOptionMultiplier;
 
     public override int MaxLevel => 2;
 
     public override string Name => "BURN BABY BURN";
 
-    public override string Description => $"Increases the fire rate of your Rocket Launcher by {fireRateMultiplier[Rarity]*level:0.%} for every burning enemy within a certain distance, but decreases the overall firing rate of the SRS and Firestarter by 20%. The maximum rate of fire you can gain is 500%. When am ememy dies while being on fire, the effect persists 8 more seconds after death.";
+    public override string Description => $"Increases the fire rate of your Rocket Launcher by {fireRateMultiplier[Rarity]*level:0.%} for every burning enemy within a certain distance, but decreases the overall firing rate of the SRS and Firestarter by 20%. The maximum rate of fire you can gain is 200%. When am ememy dies while being on fire, the effect persists 8 more seconds after death.";
     
     public override Rarity MaxRarity => Rarity.Overkill;
     
@@ -66,7 +66,7 @@ public class PatchRocketLauncherFireRate
             BindingFlags.Instance | BindingFlags.NonPublic);
         if (__instance.GetComponent <WeaponTypeComponent>().value != WeaponVariationType.FreezeframeRocketLauncher)
         {
-            cdField.SetValue(__instance, (float)(__instance.rateOfFire / Math.Min(5d, multiplier)));
+            cdField.SetValue(__instance, (float)(__instance.rateOfFire / Math.Min(3d, multiplier)));
         } else
             cdField.SetValue(__instance, (float)(__instance.rateOfFire));
 

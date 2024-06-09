@@ -11,7 +11,7 @@ public class CoreFissionUpgrade : LeveledUpgrade
 {
 
    
-    public override double AppearChanceWeighting => RarityChances.Epic;
+    public override double AppearChanceWeighting => RarityChances.Epic * AppearChanceWeightingOptionMultiplier;
 
     public override string Name => "Core Fission";
 
@@ -75,6 +75,7 @@ public class PatchKnuckleBlasterSplitGrenade
         if (other.TryGetComponent(out Grenade grenade) && !grenade.rocket && other.GetComponent<IsSplitGrenadeComponent>() == null)
         {
             MonoSingleton<TimeController>.Instance.ParryFlash();
+            
             StyleHUD.Instance.AddPoints(20, "p-boost 2.0", grenade.sourceWeapon);
             grenade.gameObject.AddComponent <IsSplitGrenadeComponent>();
             

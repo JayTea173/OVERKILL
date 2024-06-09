@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using BepInEx.Logging;
 using GameConsole.pcon;
 using HarmonyLib;
 using JetBrains.Annotations;
+using OVERKILL.UI;
 using OVERKILL.UI.Upgrades;
 using TMPro;
 using UnityEngine;
@@ -50,6 +52,11 @@ public class PatchCybergrindEnemySpawning
     public static CybergrindCustomSpawns customSpawns = new CybergrindCustomSpawns();
 
     public static TMP_Text invasionText;
+
+    public static bool spawnTrash = true;
+    public static bool spawnUncommon = true;
+    public static bool spawnSpecial = true;
+    public static bool spawnBoss = true;
 
     public struct ReflectedValueTypes
     {
@@ -150,6 +157,28 @@ public class PatchCybergrindEnemySpawning
     public static void Initialize()
     {
         
+    }
+
+    public static void AddCustomSpawn(EndlessEnemy e, CybergrindCustomSpawns.Entry entry)
+    {
+        if (e == null)
+        {
+            OK.LogTraced("Endless enemy to add to custom spawn is null!", LogLevel.Error);
+
+            return;
+        }
+        customSpawns.customSpawns.Add(e, entry);
+    }
+    
+    public static void AddFriendlySpawn(EndlessEnemy e, CybergrindCustomSpawns.Entry entry)
+    {
+        if (e == null)
+        {
+            OK.LogTraced("Endless enemy to add to custom spawn is null!", LogLevel.Error);
+
+            return;
+        }
+        customSpawns.friendlySpawns.Add(e, entry);
     }
 
     public static double GetEnemySpawnCost(EndlessEnemy enemy, EnemySpawnRarity rarity)
@@ -285,7 +314,7 @@ public class PatchCybergrindEnemySpawning
         v.hideousMasses = 0;
         
 
-        if (__instance.currentWave > 11 + waveThresholdRadiantSpawnBonus)
+        if (__instance.currentWave > 11 + waveThresholdRadiantSpawnBonus && spawnUncommon)
         {
             var currentWave = __instance.currentWave;
             var num1 = 0;
@@ -400,7 +429,7 @@ public class PatchCybergrindEnemySpawning
             //OK.Log($"Spawns wave {__instance.currentWave} (+{-waveThresholdSpawnBonus}), can spawn specials: {currentWave > 15 + waveThresholdSpawnBonus}, cond1: {v.specialAntiBuffer <= 0}, cond2: {num1 > 0}, num1: {num1}, melee pos: {meleePositions.Count}, tempcount: {__instance.tempEnemyAmount}");
 
             
-            if (__instance.currentWave > 15 + waveThresholdSpawnBonus)
+            if (__instance.currentWave > 15 + waveThresholdSpawnBonus && spawnSpecial)
             {
                 var flag = false;
 
@@ -539,8 +568,8 @@ public class PatchCybergrindEnemySpawning
 
         var pointsPrior = v.points;
         
-        if (v.points > 0 && v.usedMeleePositions < meleePositions.Count ||
-            v.points > 1 && v.usedProjectilePositions < projectilePositions.Count)
+        if ((v.points > 0 && v.usedMeleePositions < meleePositions.Count ||
+            v.points > 1 && v.usedProjectilePositions < projectilePositions.Count) && spawnTrash)
         {
             if ((Random.Range(0.0f, 1f) < 0.5 || v.usedProjectilePositions >= projectilePositions.Count) &&
                 v.usedMeleePositions < meleePositions.Count)
@@ -605,7 +634,7 @@ public class PatchCybergrindEnemySpawning
                         
                         //OK.Log($"Spawning common projectile enemy: {projectileEnemy.prefab.name}");
                         v.SetReflectedFields(__instance);
-                        TryCallMethod(spawnOnGridMethod,
+                        GameObject go = (GameObject)TryCallMethod(spawnOnGridMethod,
                             __instance,
                             new object[]
                             {
@@ -622,6 +651,8 @@ public class PatchCybergrindEnemySpawning
                         ++spawnedEnemyTypes[indexOfEnemyType].amount;
                         ++v.usedProjectilePositions;
                         ++__instance.tempEnemyAmount;
+                        
+                        //Options.DumpHierarchy(go.transform);
 
                         break;
                     }
@@ -641,12 +672,21 @@ public class PatchCybergrindEnemySpawning
         }
         else
         {
-            //OK.Log($"DONE SPAWNING! Got {__instance.enemyAmount}");
-            var enemyCount = __instance.tempEnemyAmount;
-            OK.Log($"NUM before: { __instance.enemyAmount}, {__instance.GetSpawnedEnemies().Length}");
-            int numCustomSpawns = customSpawns.DoSpawns(__instance, meleePositions, projectilePositions, ref v, spawnedEnemyTypes);
-            __instance.enemyAmount = enemyCount;
-            OK.Log($"NUM after: { __instance.enemyAmount}, {__instance.GetSpawnedEnemies().Length}");
+            
+            //OK.Log($"NUM before: { __instance.enemyAmount}, {__instance.GetSpawnedEnemies().Length}");
+
+            if (spawnBoss)
+            {
+                customSpawns.DoCustomSpawns(__instance, meleePositions, projectilePositions, ref v, spawnedEnemyTypes);
+                v.SetReflectedFields(__instance);
+            }
+
+            __instance.enemyAmount = __instance.tempEnemyAmount;
+            //OK.Log($"NUM after: { __instance.enemyAmount}, {__instance.GetSpawnedEnemies().Length}");
+            
+            customSpawns.DoFriendlySpawns(__instance, meleePositions, projectilePositions, ref v, spawnedEnemyTypes);
+            
+            
 
         }
     }

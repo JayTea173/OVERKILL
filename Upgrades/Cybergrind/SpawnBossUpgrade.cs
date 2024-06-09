@@ -72,7 +72,7 @@ public class SpawnBossUpgrade : LeveledUpgrade, IRandomizable
     public override Rarity Rarity => Rarity.Epic;
     public override Rarity MaxRarity => Rarity.Epic;
 
-    public override double AppearChanceWeighting => RarityChances.Epic * 4d;
+    public override double AppearChanceWeighting => RarityChances.Epic * 4d * AppearChanceWeightingOptionMultiplier;
 
     public override bool IsObtainable => base.IsObtainable && EndlessGrid.Instance != null;
 
@@ -208,20 +208,32 @@ public class SpawnBossUpgrade : LeveledUpgrade, IRandomizable
         return e;
     }
 
+    public static EndlessEnemy CreateEndlessEnemy(EnemyType enemyType)
+    {
+        if (EndlessGrid.Instance == null)
+            return null;
+        var prefabs = (PrefabDatabase)PatchCybergrindEnemySpawning.prefabsField.GetValue(EndlessGrid.Instance);
+        
+        var endlessEnemy = ScriptableObject.CreateInstance <EndlessEnemy>();
+        endlessEnemy.prefab = GetEnemyPrefab(enemyType);
+
+        if (endlessEnemy.prefab == null)
+            return null;
+
+        endlessEnemy.enemyType = enemyType;
+        endlessEnemy.spawnCost = (int)(prefabs.specialEnemies[0].spawnCost * 1.5f);
+        endlessEnemy.spawnWave = 0;
+        endlessEnemy.costIncreasePerSpawn = endlessEnemy.spawnCost / 2;
+
+        return endlessEnemy;
+
+    }
+
     public override void Apply()
     {
         var prefabs = (PrefabDatabase)PatchCybergrindEnemySpawning.prefabsField.GetValue(EndlessGrid.Instance);
-        
-        _endlessEnemy = ScriptableObject.CreateInstance <EndlessEnemy>();
-        _endlessEnemy.prefab = GetEnemyPrefab(enemyType.Value);
 
-        if (_endlessEnemy.prefab == null)
-            return;
-
-        _endlessEnemy.enemyType = enemyType.Value;
-        _endlessEnemy.spawnCost = (int)(prefabs.specialEnemies[0].spawnCost * 1.5f);
-        _endlessEnemy.spawnWave = 0;
-        _endlessEnemy.costIncreasePerSpawn = _endlessEnemy.spawnCost / 2;
+        _endlessEnemy = CreateEndlessEnemy(enemyType.Value);
 
         Array.Resize(ref prefabs.specialEnemies, prefabs.specialEnemies.Length + 1);
         prefabs.specialEnemies[prefabs.specialEnemies.Length - 1] = _endlessEnemy;

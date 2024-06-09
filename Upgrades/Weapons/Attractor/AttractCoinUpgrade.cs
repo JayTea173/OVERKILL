@@ -7,11 +7,12 @@ namespace OVERKILL.Upgrades.Attractor;
 public class AttractCoinUpgrade : WeaponUpgrade, IRandomizable
 {
     //public override double AppearChanceWeighting => 0.002f;
-    public override double AppearChanceWeighting => RarityChances.Epic;
+    public override double AppearChanceWeighting => RarityChances.Epic * AppearChanceWeightingOptionMultiplier;
     
     public override bool AffectsWeapon(WeaponTypeComponent wtype)
     {
-        return false;
+        return wtype.value == WeaponVariationType.MarskmanRevolver ||
+               wtype.value == WeaponVariationType.MarskmanSlabRevolver;
     }
 
     public override string Name => "OVERREAL";

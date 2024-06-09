@@ -10,7 +10,7 @@ public class CoinFlashUpgrade : WeaponUpgrade, IRandomizable
     //public override double AppearChanceWeighting => 0.002f;
     public override int MaxLevel => 2;
 
-    public override double AppearChanceWeighting => RarityChances.Rare * 0.8f;
+    public override double AppearChanceWeighting => RarityChances.Rare * 0.8f * AppearChanceWeightingOptionMultiplier;
 
     public DoubleRarityValue multiplier;
 
@@ -47,7 +47,7 @@ public class CoinFlashUpgrade : WeaponUpgrade, IRandomizable
 
     public override bool AffectsWeapon(WeaponTypeComponent wtype)
     {
-        return wtype.value == WeaponVariationType.MarskmanRevolver;
+        return wtype.value == WeaponVariationType.MarskmanRevolver || wtype.value == WeaponVariationType.MarskmanSlabRevolver;
     }
 
     public void Randomize(int seed)

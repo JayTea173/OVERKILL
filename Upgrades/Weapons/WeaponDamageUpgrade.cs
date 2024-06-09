@@ -8,7 +8,7 @@ namespace OVERKILL.Upgrades;
 
 public class WeaponDamageUpgrade : WeaponUpgrade, IRandomizable
 {
-    public override double AppearChanceWeighting => 1d;
+    public override double AppearChanceWeighting => 1d * AppearChanceWeightingOptionMultiplier;
     public override int MaxLevel => 10;
 
     public WeaponType type;

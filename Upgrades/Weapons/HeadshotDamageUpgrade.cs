@@ -9,6 +9,8 @@ public class HeadshotDamageUpgrade : WeaponUpgrade, IRandomizable
 {
     public override int MaxLevel => 5;
 
+    public override double AppearChanceWeighting => 1d * AppearChanceWeightingOptionMultiplier;
+    
     public override bool AffectsWeapon(WeaponTypeComponent wtype)
     {
         return true;

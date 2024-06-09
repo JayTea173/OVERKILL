@@ -11,7 +11,7 @@ public class CoinDistanceDamageUpgrade : WeaponUpgrade, IRandomizable
     //public override double AppearChanceWeighting => 0.002f;
     public override int MaxLevel => 5;
 
-    public override double AppearChanceWeighting => RarityChances.Rare * 0.9f;
+    public override double AppearChanceWeighting => RarityChances.Rare * 0.9f * AppearChanceWeightingOptionMultiplier;
 
     public DoubleRarityValue multiplier;
 
@@ -35,7 +35,7 @@ public class CoinDistanceDamageUpgrade : WeaponUpgrade, IRandomizable
 
     public override bool AffectsWeapon(WeaponTypeComponent wtype)
     {
-        return wtype.value == WeaponVariationType.MarskmanRevolver;
+        return wtype.value == WeaponVariationType.MarskmanRevolver || wtype.value == WeaponVariationType.MarskmanSlabRevolver;
     }
 
     public void Randomize(int seed)
@@ -87,7 +87,7 @@ public class CoinRangeBonusDamagePatch
                 PlayBoomSound(NewMovement.Instance.transform.position, 0f, 3f);
                 __instance.ricochets += 2;
                 StyleHUD.Instance.AddPoints(30, "far.ricochet", __instance.sourceWeapon);
-                
+                CameraController.Instance.CameraShake(2f);
                 
             }
             

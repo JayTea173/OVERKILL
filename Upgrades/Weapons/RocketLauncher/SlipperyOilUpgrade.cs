@@ -9,7 +9,7 @@ namespace OVERKILL.Upgrades.RocketLauncher;
 
 public class SlipperyOilUpgrade : LeveledUpgrade, IRandomizable
 {
-    public override double AppearChanceWeighting => RarityChances.Uncommon * 0.8f;
+    public override double AppearChanceWeighting => RarityChances.Uncommon * 0.8f * AppearChanceWeightingOptionMultiplier;
 
     public override int MaxLevel => 5;
 

@@ -9,7 +9,7 @@ public class StaminaRegenUpgrade : LeveledUpgrade, IRandomizable
 {
     public override int MaxLevel => 10;
 
-    public override double AppearChanceWeighting => 0.8d;
+    public override double AppearChanceWeighting => 0.8d * AppearChanceWeightingOptionMultiplier;
 
     public override string Name => "Stamina Regen Up";
 
@@ -62,7 +62,7 @@ public class PatchStaminaRegenSpeed
     public static float maxStamina = 300f;
     
     private static bool wasDashingLastFrame;
-    private static float lastDashTime;
+    public static float lastDashTime;
 
     public static float TimeSinceLastDash
     {
@@ -81,7 +81,11 @@ public class PatchStaminaRegenSpeed
     {
         if (__instance.boost && !wasDashingLastFrame)
         {
+            if (PatchStaminaRegenSpeed.TimeSinceLastDash > 1.25f)
+                PatchDashInvincibility.currAudioIndex = 0;
             lastDashTime = Time.time;
+            PatchDashInvincibility.dodgeTriggeredFlash = false;
+
         }
         
         if ((double) __instance.boostCharge != maxStamina && !__instance.sliding && !__instance.slowMode)

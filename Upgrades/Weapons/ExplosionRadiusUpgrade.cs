@@ -13,13 +13,13 @@ public class ExplosionRadiusUpgrade : WeaponUpgrade, IRandomizable
     //public override double AppearChanceWeighting => 0.002f;
     public override int MaxLevel => 5;
 
-    public override double AppearChanceWeighting => 0.8f * RarityChances.Overkill;
+    public override double AppearChanceWeighting => 0.8f * RarityChances.Overkill * AppearChanceWeightingOptionMultiplier;
 
     [JsonIgnore]
     public float multiplier = .5f;
     public override bool AffectsWeapon(WeaponTypeComponent wtype)
     {
-        return false;
+        return true;
     }
 
     public override string Name => "ULTRABOOM";

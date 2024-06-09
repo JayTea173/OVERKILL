@@ -7,7 +7,7 @@ public sealed class MaxHPUpgrade : LeveledUpgrade, IRandomizable
 {
     public override int MaxLevel => 10;
 
-    public override double AppearChanceWeighting => 0.8d;
+    public override double AppearChanceWeighting => 0.8d * AppearChanceWeightingOptionMultiplier;
 
     public override string Name => "Max HP Up";
 

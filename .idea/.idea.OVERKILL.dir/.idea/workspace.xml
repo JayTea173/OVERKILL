@@ -13,7 +13,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/c6/6a3bbbca/RankScoreData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd3cadd861a449f5bc911f793234e7e737600/ce/a405959f/LayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/45/0f32e3cd/AudioMixerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/4b/02b357b3/RankData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/24/89f37aab/ActivateNextWaveHP.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/69/d8791d76/PostProcessV2_Handler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/82/ffea433f/StatsManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/fb/78e0d284/EndlessEnemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/f4/ddc70b02/EndlessGrid.cs" root0="SKIP_HIGHLIGHTING" />
@@ -44,7 +47,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/03/367c29b6/GasolineStain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/17/7026bbdf/NailgunAnimationReceiver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/1a/f29bb37b/EnemyIdentifier.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/b5/32309f96/DeathMarker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/41/3eb7a465/Revolver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/c1/b432d98b/EnemyTypeTracker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/f1/135e435e/Activator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/61/614baad5/EnemyNailgun.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/4d/35b77987/RocketLauncher.cs" root0="SKIP_HIGHLIGHTING" />
@@ -76,6 +81,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/d7/5c490673/SandboxAlterMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/8f/596daab2/LevelEndLeaderboard.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/44/7c7dbe23/SandboxEnemy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/59/baaab3fc/Gabriel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/6e/e7bff58f/StaminaMeter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/15/991feb92/SceneHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/42/a4df72d3/List`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -83,6 +89,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/f4/deaf3d1d/WeaponOrderController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/39/011cf330/BeamType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/04/d099e6f8/SandboxSpawnableInstance.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/fa/6e564191/OneShotAudioExtension.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/ce/426c247c/GameProgressSaver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/aa/b8caba83/DryZone.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/9f/e273b398/SandboxArm.cs" root0="SKIP_HIGHLIGHTING" />
@@ -105,6 +112,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/5e/6e83f576/Coin.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/f4/592bb00f/EndlessHighScore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/ac/a340e93b/Punch.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/47e4913d64ba464e91de68d4e25636e65a400/db/1f29e204/TMP_DefaultControls.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/4e/46e91a37/RevolverBeam.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/e1/17dd97e2/IEnemyRelationshipLogic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/8c/4c495fb2/Projectile.cs" root0="SKIP_HIGHLIGHTING" />
@@ -113,6 +121,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/ad/67e016e4/BurningVoxel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/6a/b2a4896e/ZombieProjectiles.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/59/4521fc85/Zombie.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/21/6e8b3053/CameraController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/74/d823e310/ShotgunShell.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/bc/46a1b3f0/Railcannon.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/04/a7ebe65d/IdolMauricer.cs" root0="SKIP_HIGHLIGHTING" />
@@ -124,7 +133,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/bd/8fa42b45/WeaponIdentifier.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/5f/3e0a0e2f/Explosion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/df/23511c94/Drone.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/f0/bfe96e4c/BlackHoleProjectile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/e5/4122daf2/StyleHUD.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0012ea2f37974907a308009fd693c396bb200/f6/ca7880da/Shader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/c8/8438a901/RevolverAnimationReceiver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/a6/5864365e/StyleRank.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e6df654645b1486c8224892f02ea84e51eb000/86/863ca148/RotateToFaceFrustumTarget.cs" root0="SKIP_HIGHLIGHTING" />

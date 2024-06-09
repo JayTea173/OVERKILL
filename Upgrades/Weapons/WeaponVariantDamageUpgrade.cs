@@ -10,7 +10,7 @@ public class WeaponVariantDamageUpgrade : WeaponUpgrade, IRandomizable
 
     public override int MaxLevel => 5;
 
-    public override double AppearChanceWeighting => 2.2d;
+    public override double AppearChanceWeighting => 2.2d * AppearChanceWeightingOptionMultiplier;
 
     public WeaponVariationType type;
     public DoubleRarityValue multiplier;

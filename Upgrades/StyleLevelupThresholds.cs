@@ -1,4 +1,4 @@
-﻿using OVERKILL.UI.Options;
+﻿using OVERKILL.UI;
 
 namespace OVERKILL.Upgrades;
 
@@ -8,7 +8,7 @@ public class StyleLevelupThresholds
 
     public static int GetLevelAtXP()
     {
-        return GetLevelAtXP(PlayerUpgradeStats.Instance.stylePoints);
+        return GetLevelAtXP((long)PlayerUpgradeStats.Instance.stylePoints);
     }
     
     //gets level at this xp value

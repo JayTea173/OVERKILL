@@ -20,52 +20,42 @@ public class PatchMaxHP
     }
 }
 
-[HarmonyPatch(typeof(StyleCalculator), "AddPoints")]
+[HarmonyPatch(typeof(StyleHUD), nameof(StyleHUD.AddPoints))]
 public class PatchPlayerUpdate
 {
     public static void Prefix(
         StyleCalculator __instance,
         ref int points,
-        string pointName,
-        EnemyIdentifier eid,
-        GameObject sourceWeapon = null)
+        string pointID,
+        GameObject sourceWeapon = null,
+        EnemyIdentifier eid = null,
+        int count = -1,
+        string prefix = "",
+        string postfix = "")
     {
         if (points != 0)
         {
-            points = (int)(points * PlayerUpgradeStats.Instance.StylePointsMultiplier);
-            PlayerUpgradeStats.Instance.stylePoints += points;
+            
+            
+            double xpGained = points * PlayerUpgradeStats.Instance.StylePointsMultiplier * 1.5d;
+
+            xpGained *= pointID switch
+                        {
+                            "explosionhit" => 0.5d,
+                            "ultrakill.enraged" => 0.25d,
+                            _ => 0.1d,
+                        };
+            //OK.Log($"Got points: {points} from \"{pointID}\", xp: {xpGained}");
+            
+            PlayerUpgradeStats.Instance.stylePoints += xpGained;
             
             var newLevel = StyleLevelupThresholds.GetLevelAtXP();
 
-            //OK.Log($"Points to add: {points}, now got {PlayerUpgradeStats.stylePoints}, oldLevel: {PlayerUpgradeStats.okLevel}, newLevel {newLevel}");
-
             if (newLevel != PlayerUpgradeStats.Instance.okLevel)
             {
-                PlayerUpgradeStats.Instance.okLevel = newLevel;
-                UpgradeScreen.Instance.Show();
+                PlayerUpgradeStats.Instance.LevelUp(newLevel);
             }
 
-        }
-    }
-    /*
-  private void AddPoints(
-    int points,
-    string pointName,
-    EnemyIdentifier eid,
-    GameObject sourceWeapon = null)
-  {
-    int num = Mathf.RoundToInt((float) points * this.airTime - (float) points);
-    this.shud.AddPoints(points + num, pointName, sourceWeapon, eid);
-  }
-     */
-    static void Postfix(NewMovement __instance)
-    {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            if (UpgradeScreen.Instance.Shown)
-                UpgradeScreen.Instance.Hide();
-            else
-                UpgradeScreen.Instance.Show();
         }
     }
 }

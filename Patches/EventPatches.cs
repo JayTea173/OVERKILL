@@ -8,12 +8,13 @@ public class PatchEnemyDeath
 {
     static void Prefix(EnemyIdentifier __instance, bool fromExplosion)
     {
-        Events.OnDeath.Pre?.Invoke(__instance, fromExplosion);
+        Events.OnEnemyDeath.Pre?.Invoke(__instance, fromExplosion);
+        Events.OnEnemyDeath.LatePre?.Invoke(__instance, fromExplosion);
     }
     
     static void Postfix(EnemyIdentifier __instance, bool fromExplosion)
     {
-        Events.OnDeath.Post?.Invoke(__instance, fromExplosion);
+        Events.OnEnemyDeath.Post?.Invoke(__instance, fromExplosion);
     }
 }
 
@@ -46,6 +47,8 @@ public class PatchEnemyDeliverDamage
         }
         
         Events.OnDealDamage.Pre?.Invoke(evntData, __instance, target, force, hitPoint, ref multiplier, tryForExplode, critMultiplier, sourceWeapon, ignoreTotalDamageTakenMultiplier, fromExplosion);
+        Events.OnDealDamage.LatePre?.Invoke(evntData, __instance, target, force, hitPoint, ref multiplier, tryForExplode, critMultiplier, sourceWeapon, ignoreTotalDamageTakenMultiplier, fromExplosion);
+
     }
     
     static void Postfix(EnemyIdentifier __instance,  

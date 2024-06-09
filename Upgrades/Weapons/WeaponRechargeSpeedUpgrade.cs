@@ -8,7 +8,7 @@ public class WeaponRechargeSpeedUpgrade : WeaponUpgrade, IRandomizable
 {
     public override int MaxLevel => 10;
 
-    public override double AppearChanceWeighting => 0.4f;
+    public override double AppearChanceWeighting => 0.4f * AppearChanceWeightingOptionMultiplier;
 
     public override bool AffectsWeapon(WeaponTypeComponent wtype)
     {

@@ -9,13 +9,16 @@ using static EventDelegates;
 public struct Event<TDelegate>
 {
     public TDelegate Pre;
+    public TDelegate LatePre;
     public TDelegate Post;
 }
 
 public static class Events
 {
     public static Event<DeliverDamage> OnDealDamage;
-    public static Event<Death> OnDeath;
+    public static Event<Death> OnEnemyDeath;
+    public static Event<WithNone> OnPlayerRespawn;
+    public static Event <WithSender <global::RocketLauncher>> OnFreezeStart, OnFreezeEnd;
 }
 
 
@@ -26,6 +29,10 @@ public sealed class EventDelegates
         public bool isHeadshot = false;
     }
     
+    public delegate void WithSender<T>(T sender);
+
+    public delegate void WithNone();
+
     public delegate void DeliverDamage(
         DeliverDamageEventData evntData,
         EnemyIdentifier enemy,

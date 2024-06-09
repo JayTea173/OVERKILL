@@ -10,7 +10,7 @@ namespace OVERKILL.Upgrades.RocketLauncher;
 
 public class RocketBarrageUpgrade : LeveledUpgrade, IRandomizable
 {
-    public override double AppearChanceWeighting => RarityChances.Overkill * 1.3f;
+    public override double AppearChanceWeighting => RarityChances.Overkill * 1.3f * AppearChanceWeightingOptionMultiplier;
 
     public override int MaxLevel => 3;
 
@@ -63,7 +63,7 @@ public class PatchMultiRocket
             if (extraRockets > 0)
             {
                 extraRockets -= 1;
-                __instance.Invoke("Shoot", (float)(0.05d / Math.Min(5d, PatchRocketLauncherFireRate.multiplier)));
+                __instance.Invoke("Shoot", (float)(0.05d / Math.Min(3d, PatchRocketLauncherFireRate.multiplier)));
             }
             else
             {

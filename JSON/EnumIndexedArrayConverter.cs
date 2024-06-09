@@ -17,8 +17,6 @@ public class EnumIndexedArrayConverter : JsonConverter
 
     public override object? ReadJson(JsonReader reader, Type objectType, object? existingValue, JsonSerializer serializer)
     {
-        OK.Log($"Reading: {objectType.Name}");
-
         List <double> l = new List <double>();
 
         int i = 0;
@@ -63,8 +61,6 @@ public class EnumIndexedArrayConverter : JsonConverter
         var arr = l.ToArray();
 
         var v = Activator.CreateInstance(objectType, new object[] {arr});
-        
-        OK.Log($"Read enumindexed: {reader.Path}, count: {arr.Length}");
 
         return v;
     }
